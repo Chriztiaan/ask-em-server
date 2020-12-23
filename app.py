@@ -1,10 +1,10 @@
 # app.py
 from flask import Flask, request, jsonify
-from flask_cors import CORS, cross_origin
+# from flask_cors import CORS, cross_origin
 import json
 app = Flask(__name__)
-cors = CORS(app)
-app.config['CORS_HEADERS'] = 'Content-Type'
+# cors = CORS(app)
+# app.config['CORS_HEADERS'] = 'Content-Type'
 
 # http://127.0.0.1:5000/questionnaire/question1
 @app.route('/questionnaire/<questionnaire>', methods=['GET'])
