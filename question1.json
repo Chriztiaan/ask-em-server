@@ -1,0 +1,93 @@
+{
+   "title":"Employee Survey",
+   "sections":[
+      {
+         "title":"Supervisor evaluation",
+         "description":"Please answer a few questions regarding your supervisor.",
+         "questions":[
+            {
+               "number":1,
+               "question":"How likely would you recommend your supervisor to a colleague?",
+               "type":"range",
+               "answered":false,
+               "formattedQuestion":"1. How likely would you recommend your supervisor to a colleague?",
+               "range":10,
+               "rangeStartText":"Not at all likely",
+               "rangeEndText":"Extremely likely"
+            },
+            {
+               "number":2,
+               "question":"How often is your supervisor late to work?",
+               "type":"multiple",
+               "answered":false,
+               "formattedQuestion":"2. How often is your supervisor late to work?",
+               "options":[
+                  "Always",
+                  "Most of the time",
+                  "About half the time",
+                  "Once in a while",
+                  "Never"
+               ]
+            },
+            {
+               "number":3,
+               "question":"Summarise your supervisor briefly.",
+               "type":"text",
+               "answered":false,
+               "formattedQuestion":"3. Summarise your supervisor briefly."
+            },
+            {
+               "number":4,
+               "question":"Please elaborate on how your supervisor can improve.",
+               "type":"textArea",
+               "answered":false,
+               "formattedQuestion":"4. Please elaborate on how your supervisor can improve."
+            }
+         ]
+      },
+     {
+         "title":"Colleague evaluation",
+         "description":"Please answer a few questions regarding your colleague.",
+         "questions":[
+            {
+               "number":5,
+               "question":"How likely would you recommend your colleague to a different employer?",
+               "type":"range",
+               "answered":false,
+               "formattedQuestion":"5. How likely would you recommend your colleague to a colleague?",
+               "range":10,
+               "rangeStartText":"Not at all likely",
+               "rangeEndText":"Extremely likely"
+            },
+            {
+               "number":6,
+               "question":"How often is your colleague late to work?",
+               "type":"multiple",
+               "answered":false,
+               "formattedQuestion":"6. How often is your colleague late to work?",
+               "options":[
+                  "Always",
+                  "Most of the time",
+                  "About half the time",
+                  "Once in a while",
+                  "Never"
+               ]
+            },
+            {
+               "number":7,
+               "question":"Summarise your colleague briefly.",
+               "type":"text",
+               "answered":false,
+               "formattedQuestion":"7. Summarise your colleague briefly."
+            },
+            {
+               "number":8,
+               "question":"Please elaborate on how your colleague can improve.",
+               "type":"textArea",
+               "answered":false,
+               "formattedQuestion":"8. Please elaborate on how your colleague can improve."
+            }
+         ]
+      }
+   ]
+}

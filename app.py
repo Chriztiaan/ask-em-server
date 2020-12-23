@@ -1,6 +1,17 @@
 # app.py
 from flask import Flask, request, jsonify
+from flask_cors import CORS, cross_origin
+import json
 app = Flask(__name__)
+cors = CORS(app)
+app.config['CORS_HEADERS'] = 'Content-Type'
+
+# http://127.0.0.1:5000/questionnaire/question1
+@app.route('/questionnaire/<questionnaire>', methods=['GET'])
+def test(questionnaire):
+    with open(questionnaire + '.json') as json_file:
+        data = json.load(json_file)
+        return jsonify(data)
 
 @app.route('/getmsg/', methods=['GET'])
 def respond():
@@ -21,6 +32,9 @@ def respond():
     # Now the user entered a valid name
     else:
         response["MESSAGE"] = f"Welkom {name}, gaan slaap."
+
+    with open('data.json', 'w') as outfile:
+        json.dump(response, outfile)
 
     # Return the response in json format
     return jsonify(response)
